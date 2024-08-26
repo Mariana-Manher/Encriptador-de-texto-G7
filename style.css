@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    gap: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F3F5FC; 
+}
+
+.left-box textarea {
+    position: absolute;
+    width: 680px;
+    height: 380px;
+    top: 168px;
+    left: 240px;
+    border: none;
+    font: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    background-color:transparent;
+    color: #0A3871;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1%;
+    position: absolute;
+    width: 680px;
+    left: 220px;
+    top: 650px;
+}
+
+.btn.encrypt {
+    align-items: center;
+    flex: 1%;
+    padding: 24px;
+    gap: 10px;
+    margin: 0 10px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.decrypt {
+    align-items: center;
+    flex: 1%;
+    padding: 24px;
+    gap: 10px;
+    border: 2px solid #003366;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Text::placeholder {
+    font-family: 'Inter';
+    color: #0A3871;
+}
+
+.Text:focus,
+.Text:active {
+    border: none;
+    outline: none;
+}
+
+.right-box {
+    position: relative;
+    width: 400px;
+    height: 700px;
+    top: 2.5%;
+    left: 1020px;
+    padding: 40px;
+    background-color: #FFFFFF; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+    gap: 0px;
+    border-radius: 32px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    color: #7B8C9E; 
+}
+
+.right-box textarea {
+    position: absolute;
+    width: 400px;
+    height: 520px; 
+    border: none;
+    left: 40px;
+    top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    background-color: #FFFFFF;
+}
+
+.Text::placeholder {
+    font-family: 'Inter';
+    color: #495057;
+}
+
+.Text:focus,
+.Text:active {
+    border: none;
+    outline: none;
+}
+
+.note {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: row;
+    width: 252px;
+    height: 18px;
+    top: 551px;
+    left: 268px;
+    gap: 8px;
+    margin-top: 15px;
+    font-family: 'Inter';
+    font-size: 15px; 
+    color: #7B8C9E; 
+}
+
+.right-button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 1%;
+    position: relative;
+    top: 600px;
+    left: 6%;
+    align-items: center;
+}
+
+.btn.copy {
+    width: 336px;
+    height: 75px;
+    color: #003366; 
+    border: 2px solid #003366;
+    padding: 24px; 
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Hover for buttons */
+.btn:hover {
+    background-color: #00224d; 
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.15); 
+}
+
+.btn.decrypt {
+    background-color: #F3F5FC; 
+    color: #0A3871; 
+    border: 2px solid #003366;
+    margin-left: 10px; 
+}
+
+.btn.copy {
+    background-color: #FFFFFF; 
+    color: #003366; 
+    border: 2px solid #003366;
+    padding: 2px
+}
+
+.btn.decrypt:hover {
+    background-color: #7B8C9E; 
+}
+
+.btn.copy:hover {
+    background-color: #b4c1ce;  
+}
+
+.footer {
+    background-color: #F3F5FC;
+}
+
+/* Responsive design */
+
+@media (max-width: 1200px) {
+
+    .container {
+        display: flex;
+        width: auto;
+    }
+
+    .left-box textarea {
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top: 15%;
+        line-height: 30px;
+    }
+
+    .note {
+        font-size: auto;
+        top: 45%;
+        width: 70%;
+        left: 10%;
+    }
+
+    .buttons {
+        width: 70%;
+        left: 10%;
+        top: 50%; 
+        padding: 5%;
+    }
+
+    .right-box {
+        width: 80%;
+        height: 20%;
+        top: 70%;
+        left: 5%;
+        border-radius: 24px;
+
+    }
+
+    .right-button {
+        top: 70%;
+        border-radius: 24px;
+    }
+
+    .btn.copy {
+        width: 336px;
+        height: 75px;
+        align-self: flex-start;
+    }
+
+    .right-box textarea {
+        width: 80%;
+        height: 60%;
+        margin-top: auto;
+    }
+
+
+}
