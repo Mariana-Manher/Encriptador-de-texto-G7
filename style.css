@@ -7,7 +7,6 @@
 
 .container {
     position: relative;
-    gap: 0%;
     width: 100vw;
     height: 100vh;
     background-color: #F3F5FC; 
@@ -37,7 +36,7 @@
     position: absolute;
     width: 680px;
     left: 220px;
-    top: 650px;
+    top: 815px;
 }
 
 .btn.encrypt {
@@ -85,16 +84,15 @@
 
 .right-box {
     position: relative;
-    width: 400px;
-    height: 700px;
-    top: 2.5%;
-    left: 1020px;
+    width: 300px;
+    height: 800px;
+    top: 80px;
+    left: 1050px;
     padding: 40px;
     background-color: #FFFFFF; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
     gap: 0px;
     border-radius: 32px;
-    opacity: 0px;
     display: flex;
     flex-direction: column;
     color: #7B8C9E; 
@@ -102,7 +100,7 @@
 
 .right-box textarea {
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: 520px; 
     border: none;
     left: 40px;
@@ -132,7 +130,7 @@
     flex-direction: row;
     width: 252px;
     height: 18px;
-    top: 551px;
+    top: 750px;
     left: 268px;
     gap: 8px;
     margin-top: 15px;
@@ -147,8 +145,8 @@
     gap: 20px;
     padding: 1%;
     position: relative;
-    top: 600px;
-    left: 6%;
+    top: 700px;
+    left: 3%;
     align-items: center;
 }
 
@@ -236,11 +234,12 @@
     }
 
     .right-box {
-        width: 80%;
+        width: 72%;
         height: 20%;
         top: 70%;
         left: 5%;
         border-radius: 24px;
+        align-items: center;
 
     }
 
